@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+*
+    {
+        outline: none !important;
+        scroll-behavior: smooth;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+   
+}
+header {
+    position: relative;
+    z-index: 1000000;
+}
+p {
+    font-size: 1.15rem
+}
+.navbar {
+    background: transparent !important;
+    transition:0.5s;
+}
+
+.navbar.scrolled {
+    background: #fff !important;
+    transition:0.5s;
+}
+.navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show > .nav-link {
+    color:#fff;
+    background: #000;
+}
+.navbar-light .navbar-nav .active .nav-link:hover{
+    color:#fff;
+}
+.navbar-light .navbar-nav .nav-link {
+    color: rgba(0,0,0,.7);
+}
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-nav .nav-link:focus
+{
+    --color: rgba(0,0,0,1);--
+}
+.navbar-light .navbar-brand,
+.navbar-light .navbar-brand:hover,
+.navbar-light .navbar-brand:focus,
+.navbar-light .navbar-brand:visited
+{
+    color: #9e7400;
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+.bio {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 140vh;
+    position: relative;
+}
+.tartalom {
+    position: relative;
+    margin: 0px auto;
+    margin-top: 100px;
+    max-width: 1000px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 130vh;
+}
+.gombok {
+    position: relative;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.gomb1, .gomb2 {
+    margin: 30px;
+    text-decoration: none;
+    color: #fff;
+    background: #000;
+    padding: 10px;
+    border-radius: 20px;
+    transition: 0.5s;
+    box-shadow: 0 0 0 0px #b35a00;
+    text-align: center;
+}
+.gomb1:hover, .gomb2:hover {
+    color: #9e7400;
+    text-decoration: none;
+    background: #fff;
+}
+.szoveg {
+    position: relative;
+    height: auto;
+}
+.szoveg h2 {
+    margin: 30px;
+    text-align: center;
+    color: #9e7400;
+}
+.szoveg p {
+    margin: 20px;
+    text-align: justify;
+    margin-bottom: 10px;
+}
+
+.olvass {
+    position: relative;
+    width: 150px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+}
+.bach {
+    position: relative;
+    margin:  50px;
+    width: 400px;
+    height: 280px;
+}
+.bach h3 {
+    display: flex;
+    justify-content: center;
+}
+.bach iframe {
+    width: 90%;
+    height: 100%;
+}
+
+.olvass a {
+    margin: 30px;
+    text-decoration: none;
+    color: #fff;
+    background: #000;
+    padding: 10px;
+    border-radius: 20px;
+    transition: 0.5s;
+    box-shadow: 0 0 0 0px #b35a00;
+    text-align: center;
+    align-items: center;
+    font-size: 30px;
+}
+.olvass a:hover, .gomb2:hover {
+    color: #9e7400;
+    text-decoration: none;
+    background: #fff;
+}
+.kor {
+    position: relative;
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    margin: 20px;
+    float: left;
+    overflow: hidden;
+    shape-outside: circle();
+    top:20px;
+    z-index: -1;
+    
+    background-position: right;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.kor img {
+    
+}
+
+footer {
+    position: relative;
+    width: 100%;
+    background: #000;
+    padding: 50px 0 0;
+
+}
+.sci {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sci li {
+    list-style: none;
+    margin: 0 20px;
+}
+.sci li a {
+    color: #777;
+    font-size: 2em;
+    transition: 0.5s;
+}
+.sci li a:hover{
+    color:#fff;
+}
+.cpryt {
+    margin-top: 20px;
+    text-align: center;
+    color:#777;
+}
+.cpryt a,
+.cpryt a:hover {
+    color: #fff;
+}
+@media (min-width:992px)
+{
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: .5rem;
+    padding-left: .5rem;
+    }}
+@media (max-width:992px)
+{
+.navbar-light .navbar-toggler {
+    background: #fff;
+    border-radius: 0;
+}
+       .kor {
+
+    }
+    
+    .bio {
+        height: 100%;
+
+    }
+    footer {
+    
+    }
+}
+@media (max-width:414px) {
+    .tartalom {
+        height: 250%;
+    }
+    .kor {
+        display: none;
+    }
+    .gomb1, .gomb2 {
+        background: #fff;
+        color: #9e7400;
+    }
+    .szoveg p {
+        font-size: 15px;
+    }
+    .bach {
+    display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+}
+    footer {
+        display: inline-block;
+    }
+}
+
+
+
+
+
+
+
+

@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+*
+    {
+        outline: none !important;
+        scroll-behavior: smooth;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+   
+}
+header {
+    position: relative;
+    z-index: 1000000;
+}
+p {
+    font-size: 1.15rem
+}
+.navbar {
+    background: transparent !important;
+    transition:0.5s;
+}
+
+.navbar.scrolled {
+    background: #fff !important;
+    transition:0.5s;
+}
+.navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show > .nav-link {
+    color:#fff;
+    background: #000;
+}
+.navbar-light .navbar-nav .active .nav-link:hover{
+    color:#fff;
+}
+.navbar-light .navbar-nav .nav-link {
+    color: rgba(0,0,0,.7);
+}
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-nav .nav-link:focus
+{
+    --color: rgba(0,0,0,1);--
+}
+.navbar-light .navbar-brand,
+.navbar-light .navbar-brand:hover,
+.navbar-light .navbar-brand:focus,
+.navbar-light .navbar-brand:visited
+{
+    color: #9e7400;
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+.fogado {
+    position: relative;
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    justify-content: center;
+    background: url(hatt%C3%A9r%201.jpg);
+    background-size:cover;
+    background-position:top;
+    background-repeat: no-repeat;
+    background-origin: padding-box; 
+    padding-top: 80px;
+}
+
+}
+
+
+.bio {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 80vh;
+    position: relative;
+    
+}
+.cim {
+    align-self: center;
+    text-align: center;
+    opacity: 70%;
+    border-bottom-left-radius: 50px;
+    border-radius: 50px;
+    width: 40%;
+    position: relative;
+    font-size: ;
+    padding: 50px;
+}
+.cim h1 {
+    font-size: 4rem;
+    text-transform: uppercase;
+}
+.cim .klarinettist {
+    text-indent: 20px;
+    margin: 20px;
+}
+.cim .klarinettenlehrer {
+        text-indent: 30px;
+    margin: 20px;
+    }
+.tartalom {
+    position: relative;
+    margin: 0px auto;
+    text-align: justify;
+    margin-top:0px;
+    max-width: 1000px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 40px;
+}
+
+.szoveg {
+    position: relative;
+    height: 100%;
+}
+.szoveg h2 {
+    margin: 30px;
+    text-align: center;
+    color: #9e7400;
+}
+.szoveg p {
+    margin: 20px;
+    text-align: justify;
+    margin-bottom: 10px;
+}
+.kozott {
+    position: relative;
+    height: 30vh;
+    background: url(longsec.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+footer {
+    position: relative;
+    width: 100%;
+
+    background: #000;
+    padding: 50px 0 0;
+
+}
+.sci {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sci li {
+    list-style: none;
+    margin: 0 20px;
+}
+.sci li a {
+    color: #777;
+    font-size: 2em;
+    transition: 0.5s;
+}
+.sci li a:hover{
+    color:#fff;
+}
+.cpryt {
+    margin-top: 20px;
+    text-align: center;
+    color:#777;
+}
+.cpryt a,
+.cpryt a:hover {
+    color: #fff;
+}
+@media (min-width:992px)
+{
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: .5rem;
+    padding-left: .5rem;
+    }}
+@media (max-width:992px)
+{
+.navbar-light .navbar-toggler {
+    background: #fff;
+    border-radius: 0;
+}
+    
+    .bio {
+        height: 100%;
+        padding: 10px;
+    }
+    footer {
+    
+    }
+}
+@media (max-width:414px) {
+    .bio {
+        height: 150%;
+    }
+    .cim h1 {
+    font-size: 2rem;
+
+}
+    .fogado {
+        height: 50%;
+        margin-top: 90px;
+        padding: 50px;
+        
+    }
+    .szoveg p {
+        font-size: 15px;
+    }
+    footer {
+        display: inline-block;
+    }
+}
+
+
+
+
+
+
+
+
