@@ -1,0 +1,1 @@
+ez egy edző weblap
